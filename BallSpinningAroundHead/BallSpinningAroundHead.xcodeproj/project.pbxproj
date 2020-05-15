@@ -15,6 +15,7 @@
 		5CE7371D246E7CED00884AF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE7371B246E7CED00884AF4 /* LaunchScreen.storyboard */; };
 		5CE73728246E7CED00884AF4 /* BallSpinningAroundHeadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73727246E7CED00884AF4 /* BallSpinningAroundHeadTests.swift */; };
 		5CE73733246E7CED00884AF4 /* BallSpinningAroundHeadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73732246E7CED00884AF4 /* BallSpinningAroundHeadUITests.swift */; };
+		5CE73742246EE13500884AF4 /* SCNReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73741246EE13500884AF4 /* SCNReferenceNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5CE7372E246E7CED00884AF4 /* BallSpinningAroundHeadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallSpinningAroundHeadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE73732246E7CED00884AF4 /* BallSpinningAroundHeadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallSpinningAroundHeadUITests.swift; sourceTree = "<group>"; };
 		5CE73734246E7CED00884AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE73741246EE13500884AF4 /* SCNReferenceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNReferenceNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		5CE7370F246E7CEC00884AF4 /* BallSpinningAroundHead */ = {
 			isa = PBXGroup;
 			children = (
+				5CE73740246EE11300884AF4 /* Helpers */,
 				5CE73710246E7CEC00884AF4 /* AppDelegate.swift */,
 				5CE73712246E7CEC00884AF4 /* art.scnassets */,
 				5CE73714246E7CEC00884AF4 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				5CE73734246E7CED00884AF4 /* Info.plist */,
 			);
 			path = BallSpinningAroundHeadUITests;
+			sourceTree = "<group>";
+		};
+		5CE73740246EE11300884AF4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5CE73741246EE13500884AF4 /* SCNReferenceNode.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			files = (
 				5CE73715246E7CEC00884AF4 /* ViewController.swift in Sources */,
 				5CE73711246E7CEC00884AF4 /* AppDelegate.swift in Sources */,
+				5CE73742246EE13500884AF4 /* SCNReferenceNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +447,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R3G8ZRL4E;
 				INFOPLIST_FILE = BallSpinningAroundHead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +466,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R3G8ZRL4E;
 				INFOPLIST_FILE = BallSpinningAroundHead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
