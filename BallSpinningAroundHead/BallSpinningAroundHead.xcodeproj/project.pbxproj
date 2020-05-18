@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BFB886C3233768B8227BA29 /* Pods_BallSpinningAroundHeadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4E21C301E9A84572B71ACC /* Pods_BallSpinningAroundHeadTests.framework */; };
 		5CE73711246E7CEC00884AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73710246E7CEC00884AF4 /* AppDelegate.swift */; };
 		5CE73713246E7CEC00884AF4 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE73712246E7CEC00884AF4 /* art.scnassets */; };
 		5CE73715246E7CEC00884AF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73714246E7CEC00884AF4 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		5CE73728246E7CED00884AF4 /* BallSpinningAroundHeadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73727246E7CED00884AF4 /* BallSpinningAroundHeadTests.swift */; };
 		5CE73733246E7CED00884AF4 /* BallSpinningAroundHeadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73732246E7CED00884AF4 /* BallSpinningAroundHeadUITests.swift */; };
 		5CE73742246EE13500884AF4 /* SCNReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE73741246EE13500884AF4 /* SCNReferenceNode.swift */; };
+		7671FA77098D0DB47FC61CB1 /* Pods_BallSpinningAroundHead_BallSpinningAroundHeadUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBA5DA21C39C59719C4391C /* Pods_BallSpinningAroundHead_BallSpinningAroundHeadUITests.framework */; };
+		836100400B85167DC0BC3F4A /* Pods_BallSpinningAroundHead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061E2B47FE712F45DD6502F4 /* Pods_BallSpinningAroundHead.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061E2B47FE712F45DD6502F4 /* Pods_BallSpinningAroundHead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BallSpinningAroundHead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23AA3CBA2B280D5B59BABF93 /* Pods-BallSpinningAroundHead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallSpinningAroundHead.release.xcconfig"; path = "Target Support Files/Pods-BallSpinningAroundHead/Pods-BallSpinningAroundHead.release.xcconfig"; sourceTree = "<group>"; };
+		51D47A966A49F7AC3C0BAAE9 /* Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.debug.xcconfig"; path = "Target Support Files/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		594A52759859AB3A8961DD5B /* Pods-BallSpinningAroundHead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallSpinningAroundHead.debug.xcconfig"; path = "Target Support Files/Pods-BallSpinningAroundHead/Pods-BallSpinningAroundHead.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE7370D246E7CEC00884AF4 /* BallSpinningAroundHead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallSpinningAroundHead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE73710246E7CEC00884AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CE73712246E7CEC00884AF4 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -51,6 +58,11 @@
 		5CE73732246E7CED00884AF4 /* BallSpinningAroundHeadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallSpinningAroundHeadUITests.swift; sourceTree = "<group>"; };
 		5CE73734246E7CED00884AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE73741246EE13500884AF4 /* SCNReferenceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNReferenceNode.swift; sourceTree = "<group>"; };
+		5DBA5DA21C39C59719C4391C /* Pods_BallSpinningAroundHead_BallSpinningAroundHeadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BallSpinningAroundHead_BallSpinningAroundHeadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78925EF18A18A4ADF78E2287 /* Pods-BallSpinningAroundHeadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallSpinningAroundHeadTests.release.xcconfig"; path = "Target Support Files/Pods-BallSpinningAroundHeadTests/Pods-BallSpinningAroundHeadTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA4E21C301E9A84572B71ACC /* Pods_BallSpinningAroundHeadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BallSpinningAroundHeadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73922BAF78760C96CC43D8B /* Pods-BallSpinningAroundHeadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallSpinningAroundHeadTests.debug.xcconfig"; path = "Target Support Files/Pods-BallSpinningAroundHeadTests/Pods-BallSpinningAroundHeadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3357039EF21F9EEE99B5302 /* Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.release.xcconfig"; path = "Target Support Files/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836100400B85167DC0BC3F4A /* Pods_BallSpinningAroundHead.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BFB886C3233768B8227BA29 /* Pods_BallSpinningAroundHeadTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7671FA77098D0DB47FC61CB1 /* Pods_BallSpinningAroundHead_BallSpinningAroundHeadUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				5CE73726246E7CED00884AF4 /* BallSpinningAroundHeadTests */,
 				5CE73731246E7CED00884AF4 /* BallSpinningAroundHeadUITests */,
 				5CE7370E246E7CEC00884AF4 /* Products */,
+				DD7EE024CE564CE607B8E5E5 /* Pods */,
+				EF035F1E7DB32F222CF2A1F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +156,29 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		DD7EE024CE564CE607B8E5E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				594A52759859AB3A8961DD5B /* Pods-BallSpinningAroundHead.debug.xcconfig */,
+				23AA3CBA2B280D5B59BABF93 /* Pods-BallSpinningAroundHead.release.xcconfig */,
+				51D47A966A49F7AC3C0BAAE9 /* Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.debug.xcconfig */,
+				C3357039EF21F9EEE99B5302 /* Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.release.xcconfig */,
+				B73922BAF78760C96CC43D8B /* Pods-BallSpinningAroundHeadTests.debug.xcconfig */,
+				78925EF18A18A4ADF78E2287 /* Pods-BallSpinningAroundHeadTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF035F1E7DB32F222CF2A1F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				061E2B47FE712F45DD6502F4 /* Pods_BallSpinningAroundHead.framework */,
+				5DBA5DA21C39C59719C4391C /* Pods_BallSpinningAroundHead_BallSpinningAroundHeadUITests.framework */,
+				AA4E21C301E9A84572B71ACC /* Pods_BallSpinningAroundHeadTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CE73737246E7CED00884AF4 /* Build configuration list for PBXNativeTarget "BallSpinningAroundHead" */;
 			buildPhases = (
+				0838FF48CD0A06EB9326BF06 /* [CP] Check Pods Manifest.lock */,
 				5CE73709246E7CEC00884AF4 /* Sources */,
 				5CE7370A246E7CEC00884AF4 /* Frameworks */,
 				5CE7370B246E7CEC00884AF4 /* Resources */,
+				099177BF8D54757DB8A0BFE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CE7373A246E7CED00884AF4 /* Build configuration list for PBXNativeTarget "BallSpinningAroundHeadTests" */;
 			buildPhases = (
+				CC8DF7D9A50976D28DCFE81E /* [CP] Check Pods Manifest.lock */,
 				5CE7371F246E7CED00884AF4 /* Sources */,
 				5CE73720246E7CED00884AF4 /* Frameworks */,
 				5CE73721246E7CED00884AF4 /* Resources */,
@@ -181,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CE7373D246E7CED00884AF4 /* Build configuration list for PBXNativeTarget "BallSpinningAroundHeadUITests" */;
 			buildPhases = (
+				DE95047E0A03C45A78435FEB /* [CP] Check Pods Manifest.lock */,
 				5CE7372A246E7CED00884AF4 /* Sources */,
 				5CE7372B246E7CED00884AF4 /* Frameworks */,
 				5CE7372C246E7CED00884AF4 /* Resources */,
+				0F2BD76052A02830591F9146 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +310,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0838FF48CD0A06EB9326BF06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BallSpinningAroundHead-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		099177BF8D54757DB8A0BFE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BallSpinningAroundHead/Pods-BallSpinningAroundHead-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BallSpinningAroundHead/Pods-BallSpinningAroundHead-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BallSpinningAroundHead/Pods-BallSpinningAroundHead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F2BD76052A02830591F9146 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8DF7D9A50976D28DCFE81E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BallSpinningAroundHeadTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE95047E0A03C45A78435FEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5CE73709246E7CEC00884AF4 /* Sources */ = {
@@ -444,6 +592,7 @@
 		};
 		5CE73738246E7CED00884AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594A52759859AB3A8961DD5B /* Pods-BallSpinningAroundHead.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +612,7 @@
 		};
 		5CE73739246E7CED00884AF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23AA3CBA2B280D5B59BABF93 /* Pods-BallSpinningAroundHead.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +632,7 @@
 		};
 		5CE7373B246E7CED00884AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73922BAF78760C96CC43D8B /* Pods-BallSpinningAroundHeadTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +654,7 @@
 		};
 		5CE7373C246E7CED00884AF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78925EF18A18A4ADF78E2287 /* Pods-BallSpinningAroundHeadTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +676,7 @@
 		};
 		5CE7373E246E7CED00884AF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D47A966A49F7AC3C0BAAE9 /* Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +696,7 @@
 		};
 		5CE7373F246E7CED00884AF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3357039EF21F9EEE99B5302 /* Pods-BallSpinningAroundHead-BallSpinningAroundHeadUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

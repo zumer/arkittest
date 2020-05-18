@@ -1,0 +1,22 @@
+PODS:
+  - RecordButton (1.0.2)
+
+DEPENDENCIES:
+  - RecordButton (from `https://github.com/zumer/RecordButton`, branch `master`)
+
+EXTERNAL SOURCES:
+  RecordButton:
+    :branch: master
+    :git: https://github.com/zumer/RecordButton
+
+CHECKOUT OPTIONS:
+  RecordButton:
+    :commit: 30d2b803a9eac95b66daeb46ec9910c00afa5545
+    :git: https://github.com/zumer/RecordButton
+
+SPEC CHECKSUMS:
+  RecordButton: 8290de19cf5d92144ad4996eaff60994334e553b
+
+PODFILE CHECKSUM: 9a93e2f0654922091edf1d45ea87db272bcc9702
+
+COCOAPODS: 1.9.1

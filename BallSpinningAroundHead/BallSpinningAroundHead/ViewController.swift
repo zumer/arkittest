@@ -9,6 +9,8 @@
 import UIKit
 import SceneKit
 import ARKit
+import RecordButton
+import ReplayKit
 
 class ViewController: UIViewController {
 
@@ -17,6 +19,11 @@ class ViewController: UIViewController {
     
     var faceNode: SCNNode?
     var sphereNode: SCNSphere?
+    
+    @IBOutlet weak var recordButton: RecordButton!
+    var progressTimer : Timer!
+    var progress : CGFloat! = 0
+    let maxDuration : CGFloat = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +79,7 @@ class ViewController: UIViewController {
 //        let sphereNode = SCNNode(geometry: g)
         //sphereNode.position = SCNVector3(x: 0, y: 0, z: 0)
         
-        let shipNode = SCNReferenceNode(named: "coordinateOrigin")
+        let shipNode = SCNReferenceNode(named: "sphere1")
         shipNode.position = SCNVector3(x: 0.1, y: 0.1, z: 0)
         
         let rotatableNode = SCNNode()
@@ -86,6 +93,53 @@ class ViewController: UIViewController {
         rotatableNode.addChildNode(shipNode)
         
         node.addChildNode(rotatableNode)
+    }
+    
+    @IBAction func startRecord(_ sender: Any) {
+        self.progressTimer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(ViewController.updateProgress), userInfo: nil, repeats: true)
+        
+        guard RPScreenRecorder.shared().isAvailable else {
+            return
+        }
+        
+        RPScreenRecorder.shared().isMicrophoneEnabled = false
+        RPScreenRecorder.shared().startRecording()
+    }
+    
+    @objc func updateProgress() {
+        progress = progress + (CGFloat(0.05) / maxDuration)
+        recordButton.setProgress(progress)
+        
+        if progress >= 1 {
+            progressTimer.invalidate()
+        }
+        
+    }
+    
+    @IBAction func finishRecord(_ sender: Any) {
+        self.progressTimer.invalidate()
+        progress = 0
+        
+        RPScreenRecorder.shared().stopRecording { [unowned self] (preview, error) in
+            guard error == nil,
+                let preview = preview else {
+                return
+            }
+            
+            preview.previewControllerDelegate = self
+            self.present(preview, animated: true)
+        }
+    }
+}
+
+extension ViewController : RPPreviewViewControllerDelegate {
+    
+    func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
+        dismiss(animated: true)
+    }
+    
+    func previewController(_ previewController: RPPreviewViewController, didFinishWithActivityTypes activityTypes: Set<String>) {
+        
     }
 }
 
@@ -124,7 +178,7 @@ extension ViewController : ARSCNViewDelegate {
         guard let faceAnchor = anchor as? ARFaceAnchor else { return }
         currentFaceAnchor = faceAnchor
         
-        faceNode = SCNReferenceNode(named: "coordinateOrigin")
+        faceNode = SCNReferenceNode(named: "sphere1")
         
         if let faceNode = self.faceNode {
             node.addChildNode(faceNode)

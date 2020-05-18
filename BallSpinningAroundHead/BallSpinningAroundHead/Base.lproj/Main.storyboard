@@ -19,15 +19,23 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-tj-kc8">
-                                <rect key="frame" x="184" y="727" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-tj-kc8" customClass="RecordButton" customModule="RecordButton">
+                                <rect key="frame" x="157" y="677" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="87E-sL-hXc"/>
+                                    <constraint firstAttribute="height" constant="100" id="odj-9u-dyH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="finishRecord:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Iu2-X0-6An"/>
+                                    <action selector="startRecord:" destination="BV1-FR-VrT" eventType="touchDown" id="ZYg-Xr-Kem"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="c4a-tj-kc8" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="9Nf-oT-Kig"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="c4a-tj-kc8" secondAttribute="bottom" constant="85" id="UoH-eM-Yae"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
@@ -35,12 +43,13 @@
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="c4a-tj-kc8" id="tcf-oo-FdN"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>
