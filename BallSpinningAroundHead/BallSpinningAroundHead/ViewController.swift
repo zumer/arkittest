@@ -30,21 +30,14 @@ class ViewController: UIViewController {
         
         sceneView.delegate = self
         sceneView.session.delegate = self
-//        sceneView.showsStatistics = true
+        sceneView.showsStatistics = true
         sceneView.automaticallyUpdatesLighting = true
-        
-        //let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        //sceneView.scene = scene
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         resetTracking()
-        
-        //default code
-//        let configuration = ARWorldTrackingConfiguration()
-//        sceneView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -74,13 +67,8 @@ class ViewController: UIViewController {
     
     
     func addSphere(to node: SCNNode) {
-//        let g = SCNSphere(radius: 5000)
-//        g.firstMaterial?.diffuse.contents = UIColor.green
-//        let sphereNode = SCNNode(geometry: g)
-        //sphereNode.position = SCNVector3(x: 0, y: 0, z: 0)
-        
         let shipNode = SCNReferenceNode(named: "sphere1")
-        shipNode.position = SCNVector3(x: 0.1, y: 0.1, z: 0)
+        shipNode.position = SCNVector3(x: 0.2, y: 0.1, z: 0)
         
         let rotatableNode = SCNNode()
         
@@ -178,7 +166,11 @@ extension ViewController : ARSCNViewDelegate {
         guard let faceAnchor = anchor as? ARFaceAnchor else { return }
         currentFaceAnchor = faceAnchor
         
-        faceNode = SCNReferenceNode(named: "sphere1")
+        let faceGeometry = ARSCNFaceGeometry(device: sceneView.device!)!
+        let material = faceGeometry.firstMaterial!
+        material.lightingModel = .physicallyBased
+        
+        faceNode = SCNNode(geometry: faceGeometry)
         
         if let faceNode = self.faceNode {
             node.addChildNode(faceNode)
@@ -189,9 +181,13 @@ extension ViewController : ARSCNViewDelegate {
    
    /// - Tag: ARFaceGeometryUpdate
    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-       guard anchor == currentFaceAnchor,
-           let contentNode = faceNode,
-           contentNode.parent == node
-           else { return }
+        guard anchor == currentFaceAnchor,
+            let contentNode = faceNode,
+            contentNode.parent == node,
+            let faceGeometry = contentNode.geometry as? ARSCNFaceGeometry,
+            let faceAnchor = anchor as? ARFaceAnchor
+            else { return }
+    
+        faceGeometry.update(from: faceAnchor.geometry)
    }
 }
